@@ -101,6 +101,7 @@
       -webkit-border-radius: 6px
       -moz-border-radius: 6px
       border-radius: 6px
+      margin: 10px /* Margin on mobile devices*/
 
       padding: 20px 30px
       label
