@@ -2,14 +2,15 @@
   <div class="container">
     <div class="form" @keyup.enter="submit">
       <div class="logo">
-        <img v-bind:src="host + '/web/logo.png'" alt="">
+        <!--WTF Vue Logo? <img v-bind:src="'../web/logo.png'" alt="">-->
+        <h1 class="heading">Oblecto</h1>
       </div>
       <label for="username">Username</label>
       <input type="text" id="username" v-model="credentials.username">
       <label for="password">Password</label>
       <input id="password" type="password" v-model="credentials.password">
       <div class="bottom">
-        <span class="server-indicator">{{ host }} <a v-on:click="changeHost" class="nav-link">Change</a></span>
+        <span class="server-indicator">{{ host }} <a v-on:click="changeHost" class="nav-link"><i>Change</i></a></span>
       <button type="submit" @click="submit">Login</button>
       </div>
     </div>
@@ -87,9 +88,13 @@
     display: flex
     align-items: center
     justify-content: center
-    .form
-      box-shadow: 0px 0px 5px 2px rgba(darken(darken(#696060,17) + #000000, 6), 0.75)
 
+    .heading
+      text-align: center
+      padding-bottom: 10px
+      border-bottom: 2px solid white
+
+    .form
       width: 100%
       max-width: 500px
       background-color: rgba(0, 0, 0, 0.3)
@@ -101,9 +106,8 @@
       label
         display: block
         color: #f2f2f2
-        padding: 5px
+        padding: 15px 5px
         font:
-          family: Roboto
           size: 1.2em
       input
         display: block
@@ -129,6 +133,7 @@
     padding: 10px  0
     border: none
     margin-top: 20px
+
 
   .logo
     img

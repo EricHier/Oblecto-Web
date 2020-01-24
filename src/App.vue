@@ -82,6 +82,11 @@
 </script>
 
 <style lang="sass">
+
+  body
+    font-family: "Josefin Sans Light", SansSerif
+
+
   .system-notification
     background: #272222 !important
     padding: 7px 10px
@@ -100,7 +105,7 @@
     background: #696060 /* Old browsers */
     background: -moz-linear-gradient(to bottom, #696060 0%, #55535b 36%, #28343b 100%) /* FF3.6-15 */
     background: -webkit-linear-gradient(to bottom, #696060 0%, #55535b 36%, #28343b 100%) /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #696060 0%, #55535b 36%, #28343b 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #1e1f26, #283655 25%, #4d648d 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-position: top
     background-attachment: fixed
     background-repeat: round
